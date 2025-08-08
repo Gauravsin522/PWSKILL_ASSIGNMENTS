@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict Liquidity</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Cryptocurrency Data</h2>
+        <form action="{{ url_for('predict_datapoint') }}" method="post">
+            <div>
+                <label for="price">Price (USD):</label>
+                <input type="number" name="price" step="0.0001" required>
+            </div>
+
+            <div>
+                <label for="volume">24h Volume (USD):</label>
+                <input type="number" name="volume" step="0.0001" required>
+            </div>
+
+            <div>
+                <label for="market_cap">Market Capitalization (USD):</label>
+                <input type="number" name="market_cap" step="0.0001" required>
+            </div>
+
+            <div>
+                <input type="submit" value="Predict Liquidity">
+            </div>
+        </form>
+
+        {% if results %}
+            <h3>Predicted Liquidity Index: {{ results }}</h3>
+        {% endif %}
+    </div>
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>

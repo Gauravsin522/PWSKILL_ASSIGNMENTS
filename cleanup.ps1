@@ -28,7 +28,8 @@ $repos = @(
     @{ url = "https://github.com/Gauravsin522/Twenty-three"; folder = "Assignment_24" },
     @{ url = "https://github.com/Gauravsin522/Twenty-four-assignment"; folder = "Assignment_25" },
     @{ url = "https://github.com/Gauravsin522/Twenty_five-Assignment"; folder = "Assignment_26" },
-    @{ url = "https://github.com/Gauravsin522/Twenty_sixth_Assignment"; folder = "Assignment_27" }
+    @{ url = "https://github.com/Gauravsin522/Twenty_sixth_Assignment"; folder = "Assignment_27" },
+    @{ url = "https://github.com/Gauravsin522/Cryptocurrency"; folder = "Assignment_28" }
 )
 
 Write-Host "`n=== Starting GitHub Assignment Consolidation ===`n"
